@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-int plus(int p, int r); //´õÇÏ±â
-int minus(int p, int r); //»©±â
-int multiplication(int p, int r); //°öÇÏ±â
-int division1(int p, int r); //³ª´©±â(¸ò)
-int division2(int p, int r); //³ª´©±â(³ª¸ÓÁö)
+int plus(int p, int r); //ë”í•˜ê¸°
+int minus(int p, int r); //ë¹¼ê¸°
+int multiplication(int p, int r); //ê³±í•˜ê¸°
+int division1(int p, int r); //ë‚˜ëˆ„ê¸°(ëª«)
+int division2(int p, int r); //ë‚˜ëˆ„ê¸°(ë‚˜ë¨¸ì§€)
 
 int plus(int p, int r) {
 	return p + r;
@@ -25,11 +25,11 @@ void main() {
 	int a, b, c, result = 0;
 	bool s = true;
 	while (s) {
-		printf("Ã¹¹øÂ° °ª °ú µÎ¹øÂ° °ªÀ» ÀÔ·ÂÇØÁÖ¼¼¿ä.");
+		printf("ì²«ë²ˆì§¸ ê°’ ê³¼ ë‘ë²ˆì§¸ ê°’ì„ ì…ë ¥í•´ì£¼ì„¸ìš”.");
 		scanf_s("%d %d", &a, &b);
 
-		printf("¾î¶»°Ô °è»êÇÏ½Ã°Ú¾î¿ä?\n");
-		printf("[0]Àº Á¾·á [1]Àº ´õÇÏ±â [2] »©±â [3] °öÇÏ±â [4] ³ª´©±â\n");
+		printf("ì–´ë–»ê²Œ ê³„ì‚°í•˜ì‹œê² ì–´ìš”?\n");
+		printf("[0]ì€ ì¢…ë£Œ [1]ì€ ë”í•˜ê¸° [2] ë¹¼ê¸° [3] ê³±í•˜ê¸° [4] ë‚˜ëˆ„ê¸°\n");
 		scanf_s("%d", &c);
 
 		switch (c) {
@@ -52,9 +52,9 @@ void main() {
 			result = division2(a, b);
 			break;
 		default:
-			printf("Àß¸ø ÀÔ·ÂÇÏ¼Ì½À´Ï´Ù. ´Ù½Ã ÀÔ·ÂÇØ ÁÖ¼¼¿ä.\n\n");
+			printf("ì˜ëª» ì…ë ¥í•˜ì…¨ìŠµë‹ˆë‹¤. ë‹¤ì‹œ ì…ë ¥í•´ ì£¼ì„¸ìš”.\n\n");
 		}
-		printf("°á°ú: %d \n\n", result);
+		printf("ê²°ê³¼: %d \n\n", result);
 	}
-	printf("ÀÌ¿ëÇØ ÁÖ¼Å¼­ °¨»çÇÕ´Ï´Ù~");
+	printf("ì´ìš©í•´ ì£¼ì…”ì„œ ê°ì‚¬í•©ë‹ˆë‹¤~");
 }
